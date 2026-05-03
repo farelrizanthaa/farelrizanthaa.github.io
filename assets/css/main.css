@@ -45,7 +45,7 @@
 }
 
 .dark-background {
-  --background-color: #37517e;
+  --background-color: #1b3d9b;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #4668a2;
@@ -157,7 +157,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-width: 150px;
+  max-height: 100px;
   margin-right: 8px;
 }
 
@@ -506,8 +507,8 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: white;
+  background-color: #1b3d9b;
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
@@ -520,6 +521,7 @@ h6 {
 
 .footer .footer-newsletter h4 {
   font-size: 24px;
+  color: white;
 }
 
 .footer .footer-newsletter .newsletter-form {
@@ -577,19 +579,20 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  border: 1px solid white;
   font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color:white;
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: #F3C202;
+  border-color: #F3C202;
 }
 
 .footer h4 {
+  color: white;
   font-size: 16px;
   font-weight: bold;
   position: relative;
@@ -625,16 +628,16 @@ h6 {
 
 .footer .footer-links ul a {
   display: inline-block;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: white;
   line-height: 1;
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+  color: white;
 }
 
 .footer .footer-about a {
-  color: var(--heading-color);
+  color: white;
   font-size: 28px;
   font-weight: 600;
   text-transform: uppercase;
@@ -811,6 +814,7 @@ section,
   padding-bottom: 20px;
   text-transform: uppercase;
   position: relative;
+  color: #1b3d9b;
 }
 
 .section-title h2:before {
@@ -831,8 +835,8 @@ section,
   position: absolute;
   display: block;
   width: 60px;
-  height: 3px;
-  background: var(--accent-color);
+  height: 4px;
+  background-color: #1b3d9b;
   left: 0;
   right: 0;
   bottom: 0;
@@ -841,6 +845,101 @@ section,
 
 .section-title p {
   margin-bottom: 0;
+  color: #1b3d9b;
+}
+
+.section-title2 {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title2 h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+  color: #F3C202;
+}
+
+.section-title2 h2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.888);
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
+
+.section-title2 h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #F3C202;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-title2 p {
+  margin-bottom: 0;
+  color: #F3C202;
+}
+
+.section-title3 {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title3 h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+  color: white;
+}
+
+.section-title3 h2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: white;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
+
+.section-title3 h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #1b3d9b;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-title3 p {
+  margin-bottom: 0;
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -957,6 +1056,20 @@ section,
 
 .clients .swiper-wrapper {
   height: auto;
+}
+
+.swiper-slide{
+  border: solid 2px;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.319);
+}
+
+.swiper-slide img{
+  width: 100%;
+}
+.swiper-slide h3{
+  color: #1b3d9b;
 }
 
 .clients .swiper-slide img {
@@ -1127,7 +1240,7 @@ section,
 }
 
 .why-us .why-us-img img {
-  max-height: 70%;
+  max-height: 95%;
 }
 
 /*--------------------------------------------------------------
@@ -1238,6 +1351,15 @@ section,
 /*--------------------------------------------------------------
 # Work Process Section
 --------------------------------------------------------------*/
+.work-process{
+  background-color: #1b3d9b;
+}
+.work-process .section-title h2{
+  color: white;
+}
+.work-process .section-title p{
+  color: white;
+}
 .work-process .steps-item {
   background: var(--surface-color);
   border-radius: 20px;
@@ -1257,8 +1379,8 @@ section,
 }
 
 .work-process .steps-item:hover .steps-number {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background-color: #F3C202;
+  color: #1b3d9b;
 }
 
 .work-process .steps-item:hover .steps-image img {
@@ -1272,14 +1394,15 @@ section,
 
 .work-process .steps-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  /* height: 100%; */
+  /* object-fit: cover; */
   transition: transform 0.6s ease;
 }
 
 .work-process .steps-content {
   position: relative;
   padding: 40px 30px 30px;
+
 }
 
 .work-process .steps-content .steps-number {
@@ -1288,8 +1411,8 @@ section,
   top: -30px;
   width: 60px;
   height: 60px;
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background-color: #F3C202;
+  color: white;
   border-radius: 50%;
   font-family: var(--heading-font);
   font-size: 24px;
@@ -1304,6 +1427,7 @@ section,
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 15px;
+  color: #1b3d9b;
 }
 
 .work-process .steps-content p {
@@ -1323,7 +1447,7 @@ section,
 }
 
 .work-process .steps-features .feature-item i {
-  color: var(--accent-color);
+  color: #F3C202;
   font-size: 18px;
   margin-right: 10px;
 }
@@ -1786,6 +1910,16 @@ section,
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+.testimonials{
+  background-color: #e2a703;
+}
+.testimonials-box{
+  margin: 0 150px;
+}
+.testimonials img{
+  border-radius: 25px;
+}
+
 .testimonials .section-header {
   margin-bottom: 40px;
 }
@@ -1816,15 +1950,6 @@ section,
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin: 0 0 15px 0;
-}
-
-.testimonials .testimonial-item .stars {
-  margin-bottom: 15px;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
 }
 
 .testimonials .testimonial-item .quote-icon-left,
