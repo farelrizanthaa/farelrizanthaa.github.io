@@ -1995,7 +1995,7 @@ section,
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: #1b3d9b;
 }
 
 @media (min-width: 992px) {
